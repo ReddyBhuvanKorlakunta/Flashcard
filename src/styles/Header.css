@@ -1,0 +1,25 @@
+/* src/styles/Header.css */
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  background-color: #007bff;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .header-title {
+    font-size: 1.2rem;
+  }
+}

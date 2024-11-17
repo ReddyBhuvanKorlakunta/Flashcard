@@ -1,0 +1,82 @@
+/* src/styles/Flashcard.css */
+
+.card {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: 1rem auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  cursor: pointer;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.card.flip {
+  transform: rotateY(180deg);
+}
+
+.card .front,
+.card .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.front {
+  background-color: #f9f9f9;
+}
+
+.back {
+  background-color: #e0f7fa;
+  color: #00796b;
+  transform: rotateY(180deg);
+}
+
+.question-text {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.answer-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #00796b;
+}
+
+.flashcard-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.flashcard-option {
+  padding: 0.5rem;
+  background-color: #e0e7ff;
+  border-radius: 0.3rem;
+  font-size: 0.9rem;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.flashcard-option:hover {
+  background-color: #c7d2fe;
+}
+.flashcard-option.selected {
+  background-color: #d0e7ff;
+  border: 2px solid #007bff;
+}

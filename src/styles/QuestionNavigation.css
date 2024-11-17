@@ -1,0 +1,29 @@
+/* src/styles/QuestionNavigation.css */
+
+.question-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 20px 0;
+}
+
+.question-number {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.question-number.active {
+  background-color: #4a90e2;
+  color: #fff;
+}
+
+.question-number:hover {
+  background-color: #357abf;
+  color: #fff;
+}

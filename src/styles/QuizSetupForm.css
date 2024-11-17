@@ -1,0 +1,98 @@
+/* src/styles/QuizSetupForm.css */
+
+/* Dark background for the page */
+body {
+  background-color: #2d2d2d; /* Dark background for the entire page */
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Centered quiz setup container with light background */
+.quiz-setup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #ffffff; /* Light background for the setup box */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: 3rem auto;
+  color: #333; /* Dark text color */
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333; /* Standard dark color for "Rebu" */
+}
+
+.heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+}
+
+.quiz-setup-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  color: #555; /* Standard dark gray text */
+  margin-bottom: 0.3rem;
+}
+
+.form-group select,
+.form-group input {
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: #f7f7f7; /* Light gray input background */
+  border: 1px solid #ddd; /* Light border */
+  color: #333; /* Dark text in input */
+  border-radius: 5px;
+}
+
+.form-group select:focus,
+.form-group input:focus {
+  border-color: #007bff; /* Blue border on focus */
+  outline: none;
+}
+
+.btn {
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff; /* Blue button color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
