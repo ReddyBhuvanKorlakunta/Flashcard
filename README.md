@@ -52,23 +52,6 @@ To get started with the Flashcard Quiz App, follow these steps:
 
 The server will run on `http://localhost:5000` by default, and the client on `http://localhost:3000`.
 
-## Project Structure
-
-```php
-FlashcardApp/
-├── client/                   // Frontend React application
-│   ├── public/
-│   ├── src/
-│   └── package.json
-├── server/                   // Backend Node.js server
-│   ├── routes/
-│   │   └── flashcards.js     // Flashcard API routes
-│   ├── server.js             // Main server file
-│   └── package.json
-├── .gitignore
-└── README.md
-```
-
 ## Server Configuration
 
 The backend server is set up using **Express.js** and runs on port `5000` by default. You can modify the port by setting a custom `PORT` environment variable.
